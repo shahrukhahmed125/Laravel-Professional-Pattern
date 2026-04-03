@@ -10,7 +10,7 @@
                     <strong>Add New Project</strong>
                 </div>
                 <div class="card-body">
-                    <form action="{{ route('projects.store') }}" method="POST">
+                    <form action="{{ route('store') }}" method="POST">
                         @csrf
                         <div class="mb-3">
                             <label class="form-label">Project Name</label>
@@ -81,7 +81,7 @@
                                                         <h5 class="modal-title" id="editModalLabel-{{ $project->id }}">Edit Project #{{ $project->id }}</h5>
                                                         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                                                     </div>
-                                                    <form action="{{ route('projects.update', $project->id) }}" method="POST">
+                                                    <form action="{{ route('update', $project->id) }}" method="POST">
                                                         @csrf
                                                         @method('PUT')
                                                         <div class="modal-body">
@@ -116,7 +116,7 @@
                                                     </div>
                                                     <div class="modal-footer">
                                                         <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancel</button>
-                                                        <form action="{{ route('projects.destroy', $project->id) }}" method="POST" class="d-inline">
+                                                        <form action="{{ route('destroy', $project->id) }}" method="POST" class="d-inline">
                                                             @csrf
                                                             @method('DELETE')
                                                             <button type="submit" class="btn btn-danger">Yes, delete</button>
