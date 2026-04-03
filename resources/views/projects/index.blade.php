@@ -1,4 +1,4 @@
-<link href="/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+<link href="{{asset('vendor/bootstrap/css/bootstrap.min.css')}}" rel="stylesheet">
 <div class="container my-4">
     <h2 class="mb-4">Projects</h2>
 
@@ -137,4 +137,4 @@
         </div>
     </div>
 </div>
-<script src="/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+<script src="{{asset('vendor/bootstrap/js/bootstrap.bundle.min.js')}}"></script>
